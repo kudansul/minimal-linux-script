@@ -17,7 +17,7 @@ After that simply run the below script. It doesn't require root privileges. In t
     tar -xvf syslinux-6.03.tar.xz
     cd busybox-1.29.3
     make distclean defconfig
-    sed -i "s|.*CONFIG_STATIC.*|CONFIG_STATIC=y|" .config
+    #sed -i "s|.*CONFIG_STATIC.*|CONFIG_STATIC=y|" .config
     make busybox install
     cd _install
     rm -f linuxrc
